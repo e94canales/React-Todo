@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 232);
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-family: 'Righteous';
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(252, 165, 65);
+    width: 100%;
+    background-color: rgb(255, 235, 195);
+    padding: 1%;
+}
+
+.todo.completed-true {
+    text-decoration: line-through;
+    background-color: rgb(172, 172, 172);
+    opacity: 50%;
+}
+.completed-false {
+    color: rgb(85, 85, 85);
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+input {
+    margin-top: 3%;
+    padding: .5% 2%;
+    border-radius: 15px;
+    outline: none;
+}
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: .5% 2%;
+    margin: 1% .5%;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: orange;
+}
+.todoListContainer {
+    display: flex;
+    overflow-x: scroll;
+}
+.todo {
+    background-color: rgb(255, 199, 126);
+    padding: 5%;
+    margin: 2%;
+    border-radius: 15%;
+    text-align: center;
+    cursor: pointer;
+    filter: drop-shadow(0 1px 4px rgb(196, 194, 194));
+}
+.todo:hover {
+    opacity: 80%;
+}
